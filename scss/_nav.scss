@@ -1,0 +1,47 @@
+nav {
+  ul {
+    display: flex;
+
+    li {
+      flex: 1 1 100%;
+      display: flex;
+
+      a {
+        flex: 1 1 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: 1px solid $black;
+        text-decoration: none;
+        background-color: $highlight;
+        color: $white;
+
+        &:visited {
+          background-color: $highlight;
+          color: $white;
+        }
+
+        &:focus {
+          background-color: $highlight;
+          color: $white;
+          border: 3px solid $flashy;
+        }
+
+        &:hover {
+          background-color: darken($highlight, 5%);
+          color: $white;
+        }
+
+        &:active {
+          background-color: $highlight;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: lighten($highlight, 10%) !important;;
+  color: $white;
+
+}

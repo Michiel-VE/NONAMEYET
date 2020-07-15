@@ -1,0 +1,15 @@
+// import Font Awesome
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css";
+
+// Override Bs4 variables and custom mixins
+
+@import "var";
+
+// Link to BS4
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom code/partials
+@import "reset";
+@import "nav";
+@import "footer";
+@import "foto";

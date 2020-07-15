@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background;
+  color: $black;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}
+
+h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: $ff-titel;
+}

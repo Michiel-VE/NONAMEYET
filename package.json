@@ -1,0 +1,39 @@
+{
+  "name": "nonameyet",
+  "version": "1.0.1",
+  "description": "Het oude Zammel online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michiel-VE/NoNameYet.git"
+  },
+  "keywords": [
+    "Zammel"
+  ],
+  "author": "Van Eynde Michiel & Van Eynde Willy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michiel-VE/NoNameYet/issues"
+  },
+  "homepage": "https://github.com/Michiel-VE/NoNameYet#readme",
+  "devDependencies": {
+    "@lipemat/css-mqpacker": "^8.0.1",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.4.1",
+    "ngrok": "^3.2.7"
+  },
+  "dependencies": {}
+}
