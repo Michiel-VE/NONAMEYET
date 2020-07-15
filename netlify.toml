@@ -1,6 +1,6 @@
 [build]
   command = "CI= npm run build"
-  publish = "/dist"
+  publish = "/"
   functions = "src/functions"
   NODE_ENV = "10.15.3"
 
