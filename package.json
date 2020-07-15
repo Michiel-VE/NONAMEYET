@@ -4,7 +4,7 @@
   "description": "Het oude Zammel online",
   "main": "index.js",
   "scripts": {
-    "test": "npm run"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
