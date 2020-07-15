@@ -5,3 +5,6 @@
 /dist/js/jquery.min.js
 /dist/css
 /package-lock.json
+
+# Local Netlify folder
+.netlify
