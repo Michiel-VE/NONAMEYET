@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="nl">
 <head>
@@ -14,14 +13,35 @@
 <body>
 <div class="container">
     <section class="text-center mt-3">
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">Startpagina</a></li>
-                <li><a href="dist/pages/foto.html">Foto's</a></li>
-                <li><a href="dist/pages/gebeurtenissen.html">Gebeurtenissen</a></li>
-                <li><a href="dist/pages/geschiedenis.html">Geschiedenis</a></li>
-                <li><a href="dist/pages/hobby.html">Hobby's</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md mb-4">
+
+            <p class="d-md-none navbar-brand">Navigatie</p>
+            <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon2 mr-0">
+                    <span></span><span></span><span></span><span></span></div>
+            </button>
+
+            <div class="collapse navbar-collapse pt-2" id="navbar">
+                <ul class="navbar-nav d-flex w-100">
+                    <li class="d-flex">
+                        <a class="active" href="/index.html">Startpagina</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="dist/pages/foto.html">Foto's</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="dist/pages/gebeurtenissen.html">Gebeurtenissen</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="dist/pages/geschiedenis.html">Geschiedenis</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="dist/pages/hobby.html">Hobby's</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </section>
 
@@ -39,8 +59,8 @@
             </figure>
 
 
-
-            <p class="col-sm-12 col-md-6 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores, aspernatur at
+            <p class="col-sm-12 col-md-6 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                asperiores, aspernatur at
                 beatae commodi
                 corporis
                 facilis id iure molestias non. Alias at dignissimos eum eveniet ipsam itaque necessitatibus porro
@@ -81,7 +101,7 @@
         </article>
     </div>
 
-    <section>
+    <section class="mt-2">
         <footer class="text-center pt-2">
             <div class="row">
                 <p class="col-12">&copy Van Eynde</p>
@@ -89,6 +109,17 @@
             </div>
         </footer>
     </section>
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.second-button').on('click', function () {
+
+                $('.animated-icon2').toggleClass('open');
+            });
+        });
+    </script>
 </div>
 </body>
 </html>

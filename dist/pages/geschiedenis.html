@@ -11,20 +11,61 @@
 </head>
 <body>
 <div class="container">
+
     <section class="text-center mt-3">
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Startpagina</a></li>
-                <li><a href="../pages/foto.html">Foto's</a></li>
-                <li><a href="../pages/gebeurtenissen.html">Gebeurtenissen</a></li>
-                <li><a class="active" href="../pages/geschiedenis.html">Geschiedenis</a></li>
-                <li><a href="../pages/hobby.html">Hobby's</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md mb-4">
+
+            <p class="d-md-none navbar-brand">Navigatie</p>
+            <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon2 mr-0">
+                    <span></span><span></span><span></span><span></span></div>
+            </button>
+
+            <div class="collapse navbar-collapse pt-2" id="navbar">
+                <ul class="navbar-nav d-flex w-100">
+                    <li class="d-flex">
+                        <a href="../../index.html">Startpagina</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../pages/foto.html">Foto's</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../pages/gebeurtenissen.html">Gebeurtenissen</a>
+                    </li>
+                    <li class="d-flex">
+                        <a class="active"  href="../pages/geschiedenis.html">Geschiedenis</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../pages/hobby.html">Hobby's</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </section>
 
-
     <div class="foto4"></div>
+
+    <section class="mt-2">
+        <footer class="text-center pt-2">
+            <div class="row">
+                <p class="col-12">&copy Van Eynde</p>
+                <p class="col-12">&dash;2020&dash;</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.second-button').on('click', function () {
+
+                $('.animated-icon2').toggleClass('open');
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
