@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
-    <title>Title</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -54,20 +54,30 @@
 
     <h1 class="text-center pb-2">Contacteer ons</h1>
 
-    <form action="" method="post" class="row text-center p-3">
-        <div class="col-sm-12 col-md-6 form-group row">
+    <form action="" method="post" class="row text-center p-3 needs-validation" novalidate enctype="multipart/form-data" data-netlify="true">
+        <div class="col-sm-12 col-md-4 form-group row">
             <label class="col-12" for="voornaam">Voornaam: </label>
-            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="voornaam">
+            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
+            <div class="invalid-feedback">Dit is geen geldige voornaam</div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 form-group row">
+            <label class="col-12" for="achternaam">Achternaam: </label>
+        <input class="col-8 m-auto form-control" type="text" name="voornaam" id="achternaam" placeholder="Achternaam" required>
+            <div class="invalid-feedback">Dit is geen geldige achternaam</div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 form-group row">
+            <label class="col-12" for="email">Email: </label>
+            <input class="col-8 m-auto form-control" type="email" name="bericht" id="email"
+                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Email" required>
+            <div class="invalid-feedback">Dit is geen bestaand email</div>
         </div>
 
         <div class="col-sm-12 col-md-6 form-group row">
-            <label class="col-12" for="achternaam">Achternaam: </label>
-            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="achternaam">
-        </div>
-
-        <div class="col-12 form-group row">
             <label class="col-12" for="bericht">Bericht: </label>
-            <textarea class="ml-auto form-control" name="bericht" id="bericht" cols="80" rows="5"></textarea>
+            <textarea class="ml-auto form-control" name="bericht" id="bericht" cols="80" rows="5" placeholder="Schrijf je vraag, mening of bericht hier" required></textarea>
+            <div class="invalid-feedback">Gelieve een bericht te schrijven</div>
         </div>
 
         <div class="col-sm-12 col-md-6 form-group row">
@@ -75,11 +85,24 @@
             <input class="form-control-file col-10 ml-auto" type="file" name="bestand" id="bestand">
         </div>
 
-        <div class="col-sm-12 col-md-6 form-group row">
-            <input class="mt-1 col-2" type="checkbox" name="akkoord" id="akkoord">
-            <label class="col-10" for="akkoord">Ik ga akkoord dat mijn afbeelding op deze site gepost mag worden</label>
+        <div class="col-sm-12 col-md-6 offset-md-3 form-group row">
+            <input class="mt-1 col-2" type="checkbox" name="akkoord" id="akkoord" required>
+            <label class="col-10" for="akkoord">Ik ga akkoord dat mijn afbeelding op deze site gepost mag worden en/ of het bericht wordt bijgehouden.</label>
+            <div class="invalid-feedback">U bent niet akkoord gegaan met de voorwaarden</div>
         </div>
 
+        <div class="form-group" data-netlify-recaptcha="true">
+
+        </div>
+
+        <div class="form-group col-12">
+            <button type="submit" class="btn btn-lg btn-outline-success">Verstuur</button>
+        </div>
+
+        <div class="d-none">
+            <label for="honey">Niet invullen</label>
+            <input type="text" name="Honey" id="honey" autocomplete="off" tabindex="-1">
+        </div>
     </form>
 
     <section class="mt-2">
@@ -99,6 +122,15 @@
             $('.second-button').on('click', function () {
 
                 $('.animated-icon2').toggleClass('open');
+            });
+
+            var form = document.querySelector(".needs-validation");
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated')
             });
         });
     </script>
