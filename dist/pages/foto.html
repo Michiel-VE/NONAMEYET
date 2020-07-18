@@ -2,8 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
     <title>Foto's</title>
@@ -11,6 +10,11 @@
 </head>
 <body>
 <div class="container">
+    <div id="top" class="rounded">
+        <a href="#">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
 
     <section class="text-center mt-3">
         <nav class="navbar navbar-expand-md mb-4">
@@ -40,6 +44,9 @@
                     <li class="d-flex">
                         <a href="../pages/hobby.html">Hobby's</a>
                     </li>
+                    <li class="d-flex">
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -65,8 +72,9 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                  data-parent="#accordion">
                 <div class="card-body text-justify">
+
+                    <p><i class="fas fa-user pr-2"></i> Personen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-user pr-2"></i> Personen</thead>
                         <tr>
                             <th>reeks 1</th>
                             <th>reeks 2</th>
@@ -97,8 +105,10 @@
                         </tr>
 
                     </table>
+
+                    <p><i class="fas fa-users pr-2"></i>Groepen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-users pr-2"></i>Groepen</thead>
+
                         <tr>
                             <th>Groep reeks 1</th>
                             <th>Groep reeks 2</th>
@@ -114,8 +124,10 @@
                             <td>Bezoek groep reeks hier</td>
                         </tr>
                     </table>
+
+                    <p><i class="fas fa-archive pr-2"></i>Overige</p>
                     <table class="text-center">
-                        <thead><i class="fas fa-archive pr-2"></i>Overige</thead>
+
                         <tr>
                             <th>Overige reeks 1</th>
                             <th>Overige reeks 2</th>
@@ -143,8 +155,9 @@
 
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body text-justify">
+
+                    <p><i class="fas fa-user pr-2"></i> Personen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-user pr-2"></i> Personen</thead>
                         <tr>
                             <th>reeks 1</th>
                             <th>reeks 2</th>
@@ -175,8 +188,9 @@
                         </tr>
 
                     </table>
+
+                    <p><i class="fas fa-users pr-2"></i>Groepen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-users pr-2"></i>Groepen</thead>
                         <tr>
                             <th>Groep reeks 1</th>
                             <th>Groep reeks 2</th>
@@ -192,8 +206,9 @@
                             <td>Bezoek groep reeks hier</td>
                         </tr>
                     </table>
+
+                    <p><i class="fas fa-archive pr-2"></i>Overige</p>
                     <table class="text-center">
-                        <thead><i class="fas fa-archive pr-2"></i>Overige</thead>
                         <tr>
                             <th>Overige reeks 1</th>
                             <th>Overige reeks 2</th>
@@ -221,8 +236,9 @@
 
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body text-justify">
+
+                    <p><i class="fas fa-user pr-2"></i> Personen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-user pr-2"></i> Personen</thead>
                         <tr>
                             <th>reeks 1</th>
                             <th>reeks 2</th>
@@ -253,8 +269,9 @@
                         </tr>
 
                     </table>
+
+                    <p><i class="fas fa-users pr-2"></i>Groepen</p>
                     <table class="text-center mb-2">
-                        <thead><i class="fas fa-users pr-2"></i>Groepen</thead>
                         <tr>
                             <th>Groep reeks 1</th>
                             <th>Groep reeks 2</th>
@@ -270,8 +287,9 @@
                             <td>Bezoek groep reeks hier</td>
                         </tr>
                     </table>
+
+                    <p><i class="fas fa-archive pr-2"></i>Overige</p>
                     <table class="text-center">
-                        <thead><i class="fas fa-archive pr-2"></i>Overige</thead>
                         <tr>
                             <th>Overige reeks 1</th>
                             <th>Overige reeks 2</th>
@@ -291,7 +309,7 @@
     <section class="mt-2">
         <footer class="text-center pt-2">
             <div class="row">
-                <p class="col-12">&copy Van Eynde</p>
+                <h6 class="col-12">&copy; Van Eynde</h6>
                 <p class="col-12">&dash;2020&dash;</p>
             </div>
         </footer>
@@ -301,7 +319,6 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
-
 
         $(function () {
             $('#myCollapsible').collapse({
@@ -320,7 +337,7 @@
 
                 $('.animated-icon2').toggleClass('open');
             });
-        })
+        });
     </script>
 </div>
 </body>

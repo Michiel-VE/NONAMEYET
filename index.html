@@ -2,8 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
     <meta name="description" content="NOG DOEN !!!!!!!!!!!!!!!!!!">
@@ -14,12 +13,14 @@
 <div class="container">
     <div id="top" class="rounded">
         <a href="#">
-            <i class="fas fa-chevron-up mx-auto my-auto"></i>
-        </a></div>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
     <section class="text-center mt-3">
         <nav class="navbar navbar-expand-md mb-4">
 
-            <p class="d-md-none navbar-brand pt-3">Navigatie</p>
+            <h5 class="d-md-none navbar-brand pt-3">Navigatie</h5>
             <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
                     data-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +45,20 @@
                     <li class="d-flex">
                         <a href="dist/pages/hobby.html">Hobby's</a>
                     </li>
+                    <li class="d-flex">
+                        <a href="dist/pages/contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </section>
 
-    <div class="foto1"></div>
+    <h1 class="mt-4 text-center text-">Ge bleft van Zammel</h1>
+    <div class="foto1 mb-4"></div>
 
 
     <div class="text-justify">
-        <h1 class="mt-4 text-center text-">Ge bleft van Zammel</h1>
+
         <article class="row">
             <figure class="col-sm-12 col-md-6 col-lg-6">
                 <img class="img-fluid" src="dist/img/kaart1750.jpg" alt="De kaart van Zammel in 1750">
@@ -108,7 +113,7 @@
     <section class="mt-2">
         <footer class="text-center pt-2">
             <div class="row">
-                <p class="col-12">&copy Van Eynde</p>
+                <h6 class="col-12">&copy; Van Eynde</h6>
                 <p class="col-12">&dash;2020&dash;</p>
             </div>
         </footer>
@@ -116,6 +121,7 @@
 
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.second-button').on('click', function () {

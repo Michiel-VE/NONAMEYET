@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
-    <title>Hobby's</title>
+    <title>Title</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -42,18 +42,45 @@
                         <a href="../pages/geschiedenis.html">Geschiedenis</a>
                     </li>
                     <li class="d-flex">
-                        <a class="active" href="../pages/hobby.html">Hobby's</a>
+                        <a href="../pages/hobby.html">Hobby's</a>
                     </li>
                     <li class="d-flex">
-                        <a href="../pages/contact.html">Contact</a>
+                        <a class="active" href="../pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </section>
 
+    <h1 class="text-center pb-2">Contacteer ons</h1>
 
-    <div class="foto5"></div>
+    <form action="" method="post" class="row text-center p-3">
+        <div class="col-sm-12 col-md-6 form-group row">
+            <label class="col-12" for="voornaam">Voornaam: </label>
+            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="voornaam">
+        </div>
+
+        <div class="col-sm-12 col-md-6 form-group row">
+            <label class="col-12" for="achternaam">Achternaam: </label>
+            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="achternaam">
+        </div>
+
+        <div class="col-12 form-group row">
+            <label class="col-12" for="bericht">Bericht: </label>
+            <textarea class="ml-auto form-control" name="bericht" id="bericht" cols="80" rows="5"></textarea>
+        </div>
+
+        <div class="col-sm-12 col-md-6 form-group row">
+            <label class="col-12" for="bestand">Upload hier je foto: </label>
+            <input class="form-control-file col-10 ml-auto" type="file" name="bestand" id="bestand">
+        </div>
+
+        <div class="col-sm-12 col-md-6 form-group row">
+            <input class="mt-1 col-2" type="checkbox" name="akkoord" id="akkoord">
+            <label class="col-10" for="akkoord">Ik ga akkoord dat mijn afbeelding op deze site gepost mag worden</label>
+        </div>
+
+    </form>
 
     <section class="mt-2">
         <footer class="text-center pt-2">

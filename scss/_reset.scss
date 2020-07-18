@@ -15,6 +15,7 @@ h1 {
   font-weight: bold;
   font-variant: small-caps;
   font-family: $ff-titel;
+  border-bottom: 2px solid $black;
 }
 
 table {
@@ -32,6 +33,12 @@ table {
   }
 }
 
+form{
+  border: 2px solid $black;
+  border-bottom: none;
+  border-top: none;
+}
+
 #top{
   position: fixed;
   border: 2px solid $black;
@@ -41,18 +48,16 @@ table {
   height: 50px;
   top: 85%;
   left: 81%;
-  display: flex;
-  z-index: 12;
+  z-index: 10;
 
   a{
     background-color: lighten($black, 60%);
     color: $white;
     position: absolute;
-    top: 30%;
-    left: 32%;
-    flex: 1 1 100%;
-    display: flex;
+    width: 45px;
+    height: 45px;
     text-decoration: none;
+    z-index: 11;
 
     &:hover{
       text-decoration: none;
@@ -60,11 +65,16 @@ table {
 
     i{
       position: relative;
-      flex: 1 1 100%;
+      top: 22%;
+      left: 32%;
+      z-index: 12;
     }
   }
 }
 
+.container{
+  padding: 10px;
+}
 
 .btn-link {
   background-color: rgba(255, 255, 255, 0.7);
