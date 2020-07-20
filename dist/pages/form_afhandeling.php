@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
     <title>Dank u!</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div class="container">
@@ -41,22 +41,22 @@
             <div class="collapse navbar-collapse pt-2" id="navbar">
                 <ul class="navbar-nav d-flex w-100">
                     <li class="d-flex">
-                        <a href="index.html">Startpagina</a>
+                        <a href="../../index.html">Startpagina</a>
                     </li>
                     <li class="d-flex">
-                        <a href="dist/pages/foto.html">Foto's</a>
+                        <a href="foto.html">Foto's</a>
                     </li>
                     <li class="d-flex">
-                        <a class="active" href="dist/pages/gebeurtenissen.html">Gebeurtenissen</a>
+                        <a class="active" href="gebeurtenissen.html">Gebeurtenissen</a>
                     </li>
                     <li class="d-flex">
-                        <a href="dist/pages/geschiedenis.html">Geschiedenis</a>
+                        <a href="geschiedenis.html">Geschiedenis</a>
                     </li>
                     <li class="d-flex">
-                        <a href="dist/pages/hobby.html">Hobby's</a>
+                        <a href="hobby.html">Hobby's</a>
                     </li>
                     <li class="d-flex">
-                        <a href="dist/pages/contact.html">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +83,7 @@
             if (isset($voornaam) && isset($achternaam) !== "") {
                 echo "<p>Bedankt, <span class='text-capitalize'>$voornaam $achternaam</span> voor je bericht.</p>";
             } else {
-                echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='dist/pages/contact.html'>Contact</a></p>";
+                echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='contact.html'>Contact</a></p>";
             }
 
             if (isset($email) !== ""){
@@ -92,7 +92,7 @@
 
         } else {
             echo "<h2 class='text-center'>Deze upload is niet geldig</h2>";
-            echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='dist/pages/contact.html'>Contact</a></p>";
+            echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='contact.html'>Contact</a></p>";
         }
 
         ?>
