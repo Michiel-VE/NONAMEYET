@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950075-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-172950075-1');
@@ -67,36 +71,6 @@
 
     <div class="foto7"></div>
 
-    <div class="php_afhandeling">
-        <?php
-        $voornaam = $_POST["vooraam"];
-        $achternaam = $_POST["achternaam"];
-        $email = $_POST["email"];
-        $bericht = $_POST["bericht"];
-        $bestand = $_POST["bestand"];
-        $akkoord = $_POST["akkoord"];
-
-        $honeypot = $_POST["Honey"];
-
-        if (isset($honeypot) == "") {
-
-            if (isset($voornaam) && isset($achternaam) !== "") {
-                echo "<p>Bedankt, <span class='text-capitalize'>$voornaam $achternaam</span> voor je bericht.</p>";
-            } else {
-                echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='contact.html'>Contact</a></p>";
-            }
-
-            if (isset($email) !== ""){
-                echo "<p>We zullen je indien nodig contacteren op volgend e&dash;mailadres: $email";
-            }
-
-        } else {
-            echo "<h2 class='text-center'>Deze upload is niet geldig</h2>";
-            echo "<p>Gelieve opnieuw te beginnen via volgende link <a href='contact.html'>Contact</a></p>";
-        }
-
-        ?>
-    </div>
 
     <section class="mt-2">
         <footer class="text-center pt-2">
