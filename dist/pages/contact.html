@@ -69,21 +69,14 @@
 
     <form action="/dist/pages/form_afhandeling.html" method="post" name="Contact" class="row text-center p-3 needs-validation" novalidate enctype="multipart/form-data"
           data-netlify-recaptcha="true" netlify-honeypot="Honey" netlify>
-        <div class="col-sm-12 col-md-4 form-group row">
-            <label class="col-12" for="voornaam">Voornaam: </label>
-            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="voornaam" placeholder="Voornaam"
+        <div class="col-sm-12 col-md-6 form-group row">
+            <label class="col-12" for="naam">Naam: </label>
+            <input class="col-8 m-auto form-control" type="text" name="naam" id="naam" placeholder="Naam"
                    required>
-            <div class="invalid-feedback">Dit is geen geldige voornaam</div>
+            <div class="invalid-feedback">Dit is geen geldige naam</div>
         </div>
 
-        <div class="col-sm-12 col-md-4 form-group row">
-            <label class="col-12" for="achternaam">Achternaam: </label>
-            <input class="col-8 m-auto form-control" type="text" name="voornaam" id="achternaam"
-                   placeholder="Achternaam" required>
-            <div class="invalid-feedback">Dit is geen geldige achternaam</div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 form-group row">
+        <div class="col-sm-12 col-md-6 form-group row">
             <label class="col-12" for="email">E&dash;mail: </label>
             <input class="col-8 m-auto form-control" type="email" name="bericht" id="email"
                    pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
