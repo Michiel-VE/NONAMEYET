@@ -1,8 +1,32 @@
-.foto1 {
-  background-image: url(../img/zammel.jpg);
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   margin-top: 1rem;
   height: 400px;
+}
+
+.foto1 {
+  background-image: url(../img/bg_img/zammel.jpg);
+}
+
+.foto2 {
+  background-image: url(../img/bg_img/zammel_grote_baan_naar_punt.jpg);
+}
+
+.foto3 {
+  background-image: url(../img/bg_img/zammel_kerk_pastorij.jpg);
+}
+
+.foto4 {
+  background-image: url(../img/bg_img/zammel_van_oosterloo.jpg);
+}
+
+.foto5 {
+  background-image: url(../img/bg_img/zammel_kerkstraat.jpg);
+}
+
+.foto6 {
+  background-image: url(../img/bg_img/zammel_dorpszicht.jpg);
+  border-bottom: 2px solid $black;
 }

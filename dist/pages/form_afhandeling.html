@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
+    <meta name="description" content="Stuur foto's, meningen of vragen door naar ons en wij zullen zo snel mogelijk antwoorden op alle berichten">
     <title>Dank u!</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -34,7 +35,7 @@
     <section class="text-center mt-3">
         <nav class="navbar navbar-expand-md mb-4">
 
-            <p class="d-md-none navbar-brand pt-3">Navigatie</p>
+            <h5 class="d-md-none navbar-brand pt-3">Navigatie</h5>
             <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
                     data-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,8 +72,19 @@
 
     <div class="foto7"></div>
 
-    <div>
-        <p>Dank u ons ons te helpen zodat we deze site beter kunnen maken.</p>
+    <div class="row text-center">
+        <p class="col-sm-12 col-md-6">
+            Je bericht is verstuurd en in behandeling!
+        </p>
+
+        <p class="col-sm-12 col-md-6">
+            Indien nodig contacteren we je voor meer informatie.
+        </p>
+
+        <div class="col-12">
+            <img class="img-fluid" src="../img/form.png" alt="Bericht is onderweg" width="468" height="243">
+        </div>
+
     </div>
 
     <section class="mt-2">
@@ -84,5 +96,18 @@
         </footer>
     </section>
 </div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.second-button').on('click', function () {
+
+            $('.animated-icon2').toggleClass('open');
+        });
+    });
+</script>
+
 </body>
 </html>
