@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950075-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-172950075-1');
@@ -30,7 +34,7 @@
     <section class="text-center mt-3">
         <nav class="navbar navbar-expand-md mb-4">
 
-            <p class="d-md-none navbar-brand pt-3">Navigatie</p>
+            <h5 class="d-md-none navbar-brand pt-3">Navigatie</h5>
             <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
                     data-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +71,8 @@
 
     <div class="foto6 pb-3"></div>
 
-    <form action="/dist/pages/form_afhandeling.html" method="post" name="Contact" class="row text-center p-3 needs-validation" novalidate enctype="multipart/form-data"
+    <form action="/dist/pages/form_afhandeling.html" method="post" name="Contact"
+          class="row text-center p-3 needs-validation" novalidate enctype="multipart/form-data"
           data-netlify-recaptcha="true" netlify-honeypot="Honey" netlify>
         <div class="col-sm-12 col-md-6 form-group row">
             <label class="col-12" for="naam">Naam: </label>
@@ -106,7 +111,9 @@
     <section class="mt-2">
         <footer class="text-center pt-2">
             <div class="row">
-                <h6 class="col-12">&copy; Van Eynde</h6>
+                <p class="col-12 mb-0">Website: &copy; Van Eynde</p>
+                <p class="col-12">Foto: &copy; Belmans W. <a href="../pages/foto_linken.html">Bezoek alle foto's hier</a>
+                </p>
                 <p class="col-12">&dash;2020&dash;</p>
             </div>
         </footer>
