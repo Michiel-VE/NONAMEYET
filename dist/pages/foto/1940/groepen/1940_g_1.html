@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950075-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172950075-1');
+    </script>
+
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Michiel Van Eynde en Willy Van Eynde">
+    <title>Foto' 1940&dash;1979</title>
+    <link rel="stylesheet" href="../../../../css/style.css">
 </head>
 <body>
+<div class="container">
+    <div id="top" class="rounded">
+        <a href="#">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <section class="text-center mt-3">
+        <nav class="navbar navbar-expand-md mb-4">
+
+            <h5 class="d-md-none navbar-brand pt-3">Navigatie</h5>
+            <button class="navbar-toggler second-button p-2" type="button" data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon2 mr-0">
+                    <span></span><span></span><span></span><span></span></div>
+            </button>
+
+            <div class="collapse navbar-collapse pt-2" id="navbar">
+                <ul class="navbar-nav d-flex w-100">
+                    <li class="d-flex">
+                        <a href="../../../../../index.html">Startpagina</a>
+                    </li>
+                    <li class="d-flex">
+                        <a class="active" href="../../../../pages/foto.html">Foto's</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../../../../pages/gebeurtenissen.html">Gebeurtenissen</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../../../../pages/geschiedenis.html">Geschiedenis</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../../../../pages/hobby.html">Hobby's</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="../../../../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <h1 class="text-center">Foto's tussen 1900 en 1939</h1>
+
+        <div class="row text-center">
+            <figure class="col-sm-12 col-md-6">
+                <img src="../../../../img/Foto_1940/Voetbal_1965.jpg" alt="Voetbalploeg van 1965">
+                <figcaption class="mt-2 ml-3">
+                    <h4>Voetbalploeg van 1965</h4>
+                    <div class="row text-center">
+                        <p class="col-12">
+                            <i class="fas fa-users pr-1"></i>Boven: Van Eynde Frans, Van Eynde Rene, Van Kerckhoven Leon, Peeters Rene, Van Genechten, Peeters Jules
+
+                        </p>
+                        <p class="col-12">
+                           <i class="fas fa-users pr-1"></i>Onder: Martin Willy, Van Roy Clement, Kisser ?, Lenaerts ?, Smets Rene
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="text-left col-6">
+            <button class="btn btn-success p-0"><a class="text-white font-weight-bold p-2" href="../../../foto.html"><i class="fas fa-chevron-left pt-2 pr-1 pb-2"></i>Terug</a></button>
+        </div>
+        <div class="text-right col-6">
+            <button class="btn btn-success p-0"><a class="text-white font-weight-bold p-2" href="../groepen/1940_g_2.html">Volgende<i class="fas fa-chevron-right pt-2 pb-2 pl-1"></i></a></button>
+        </div>
+    </div>
+
+    <section class="mt-2">
+        <footer class="text-center pt-2">
+            <div class="row">
+                <p class="col-12 mb-0">Website: &copy; Van Eynde</p>
+                <p class="col-12">Foto: &copy; Belmans W. <a href="../../../../pages/foto_linken.html">Bezoek alle
+                    foto's hier</a></p>
+                <p class="col-12">&dash;2020&dash;</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="../../../../js/jquery.min.js"></script>
+    <script src="../../../../js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.second-button').on('click', function () {
+
+                $('.animated-icon2').toggleClass('open');
+            });
+        });
+    </script>
+</div>
 
 </body>
 </html>
