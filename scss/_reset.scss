@@ -4,13 +4,15 @@
 }
 
 @font-face {
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Pavanam&display=swap");
   font-display: swap;
+  font-size: $fontsize;
 }
 
 body, html {
   background-color: $background;
   color: $black;
-  font-size: $fontsize;
   line-height: $lineheight;
   scroll-behavior: smooth;
 }
