@@ -13,22 +13,22 @@
         padding-bottom: 1rem;
         border: 1px solid $black;
         text-decoration: none;
-        background-color: darken($highlight, 3%);
+        background-color: darken($highlight, 5%);
         color: $white;
 
         &:visited {
-          background-color: $highlight;
+          background-color: darken($highlight, 5%);
           color: $white;
         }
 
         &:focus {
-          background-color: $highlight;
+          background-color: darken($highlight, 5%);
           color: $white;
           border: 3px solid $flashy;
         }
 
         &:hover {
-          background-color: darken($highlight, 7%);
+          background-color: darken($highlight, 10%);
           color: $white;
         }
 

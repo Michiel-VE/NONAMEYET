@@ -76,6 +76,28 @@ form {
   border-top: none;
 }
 
+a{
+  color: $black;
+  background-color: inherit;
+  text-decoration: underline;
+
+  &:visited{
+    color: $black;
+    background-color: inherit;
+    text-decoration: dotted;
+  }
+
+  &:focus{
+    color: $white;
+    background-color: darken($highlight, 5%);
+  }
+
+  &:hover{
+    color: $white;
+    background-color: darken($highlight, 5%);
+  }
+}
+
 #top {
   position: fixed;
   border: 2px solid $black;
