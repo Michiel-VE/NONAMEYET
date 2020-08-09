@@ -54,6 +54,8 @@ table {
 
     &:hover {
       text-decoration: underline;
+      color: $black;
+      background-color: inherit;
     }
 
     &:active {
